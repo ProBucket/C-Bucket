@@ -1,3 +1,28 @@
+-------------------------------------
+   /* C# Basics */
+-------------------------------------
+   
+/*
+  // Naming convention
+  Camel Case: firstName
+  Pascal Case: FirstName
+  Hungarian Notation: strFirstName (do not use in C#)
+*/
+
+// Primitive types in C#
+C# type  .NET Type  Byte
+byte      Byte       1
+short     Int16      2
+int       Int32      4
+long      Int64      8
+float     Single     4
+double    Double     8
+decimal   Decimal    16
+char      Char       2
+bool      Boolean    1
+   
+/* Non-Premitive Types: String, Array, Enum, class */
+
 // C# code demo
 using System;
 namespace HelloWorldApplication
@@ -13,23 +38,23 @@ namespace HelloWorldApplication
    }
 }
 
-// Object create
-Animal dog = new Anumal();
+// String to number convert
+string num = "12";
+int number = Convert.ToInt32(num);
+int numbeer = int.Parse(num);
 
-// Object create with parameter
-Anumal dog = new Anumal
-{
-   name = "Dog",
-   height = 4,
-   weight = 10
-};
-
-// Print
+// Print data
 Console.WriterLine("Welcome to c#");
+Console.Log("Your age is {0}", age);
 
-// Create List
-List<string> strList = new List<string>();
-List<string> strList = new List<string>(new string[] {"Tom", "Hasan"});
+// Get data from console
+streing player = Console.ReadLine();
+
+// Comparison
+player.Equals("AI");
+
+// Variable getter setter
+public string firstName { get; set; } 
 
 // String sorting
 strList.Sort();
@@ -47,6 +72,31 @@ try{
   Console.WriteLine(ex.getType().Name);
   Console.WriteLine(ex.Message);
 }
+
+
+------------------------------------------------
+   /* C# Data Structure */
+------------------------------------------------
+
+// Create List
+List<string> strList = new List<string>();
+List<string> strList = new List<string>(new string[] {"Tom", "Hasan"});
+
+
+------------------------------------------------
+   /* C# Object Oriented Programming */  
+------------------------------------------------
+   
+// Object create
+Animal dog = new Anumal();
+
+// Object create with parameter
+Anumal dog = new Anumal
+{
+   name = "Dog",
+   height = 4,
+   weight = 10
+};
 
 // Abstract class 
 abstract class Shape
