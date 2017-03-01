@@ -13,6 +13,17 @@ namespace HelloWorldApplication
    }
 }
 
+// Object create
+Animal dog = new Anumal();
+
+// Object create with parameter
+Anumal dog = new Anumal
+{
+   name = "Dog",
+   height = 4,
+   weight = 10
+};
+
 // Print
 Console.WriterLine("Welcome to c#");
 
@@ -36,6 +47,50 @@ try{
   Console.WriteLine(ex.getType().Name);
   Console.WriteLine(ex.Message);
 }
-  
+
+// Abstract class 
+abstract class Shape
+{
+   public abstract double area();
+   
+   public vaid sayHi()
+   {
+      Console.WriteLine("Hellow");
+   }
+}
+/* abstract class can have both abstract method and defined method */
+
+// Interface
+public interface ShapeItem
+{
+   double area();  
+}
+/* interface can only have abstract methods */
+
+// Inheritance
+class Rectangle: Shape
+{
+   private double n1;
+   private double n2;
+   
+   public Rectangle(double num1, double num2)
+   {
+      n1 = num1;
+      n2 = num2;
+   }
+   
+   public override double area()
+   {
+      return n1 * n2;
+   }
+   
+   // Operator overloadin
+   public static Rectangle operator+ (Rectangle rect1, Rectangle rect2)
+   {
+      double restLength = rect1.length + rect2.length;
+      double rectWidth = rect1.width + rect
+   }
+   
+}
 
 
