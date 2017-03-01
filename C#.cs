@@ -78,6 +78,16 @@ try{
    /* C# Data Structure */
 ------------------------------------------------
 
+// Create Array
+int[] array = new int[5];
+array = {1,2,3,4,5};
+array.Rank;
+array.Length;
+
+// Multidimentional Array
+int[,] multiArray = new int[5, 2];
+int[,,] multiArray = new int[5, 2, 3];
+   
 // Create List
 List<string> strList = new List<string>();
 List<string> strList = new List<string>(new string[] {"Tom", "Hasan"});
