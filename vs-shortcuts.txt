@@ -1,9 +1,0 @@
-# http://visualstudioshortcuts.com/2015/ [VS shortcut list]
-
-# Ctrl + <  :To open file in project
-
-# Ctrl + Shift + F  :To find word in project
-
-# Ctrl + Shift + O  :To collapse all method
-
-# Ctrl + Shift + L  :To expand all method
